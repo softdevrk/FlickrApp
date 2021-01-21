@@ -1,0 +1,49 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+def rx_pods
+  pod 'RxSwift', '5.1.1'
+  pod 'RxCocoa', '5.1.1'
+end
+
+def alamofire
+  pod 'RxAlamofire', '5.7.1'
+  pod 'Alamofire', '5.4.0'
+end
+
+def dependency_injection 
+  pod 'Swinject', '2.7.1'
+end
+
+target 'FlickrApp' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  rx_pods
+  dependency_injection
+  pod 'Kingfisher', '5.15.8'
+
+  # Pods for FlickrApp
+
+end
+
+target 'NetworkPlatform' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  rx_pods
+  alamofire
+
+  # Pods for FlickrApp
+
+end
+
+target 'DomainPlatform' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  rx_pods
+
+  # Pods for FlickrApp
+
+end
