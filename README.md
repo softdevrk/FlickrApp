@@ -4,6 +4,7 @@ Polarr assessment application.
 # Architecture
 ## MVVM + Separated Domain and Networking platforms
 > DomainPlatform as separated target -> visible for Main target
+
 > NetworkPlatform as separated targer -> visible for Domain target
 
 # Used Pods
